@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: monospace;
+}
+
+body {
+    height: 4000px;
+}
+
+/* Header */
+#header {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    background-size: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Navigation */
+.subNav,
+#navigation {
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+}
+
+#navigation li {
+    position: relative;
+}
+
+#navigation > li {
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+#navigation > li > a {
+    color: white;
+}
+
+#navigation li a {
+    display: block;
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 25px;
+}
+
+#navigation li:hover .subNav {
+    display: block;
+    min-width: 120px;
+}
+
+#navigation > li:hover > a {
+    background-color: gray;
+    color: black;
+}
+
+#navigation .subNav {
+    display: none;
+    box-shadow: 5px 10px 30px grey;
+    position: absolute;
+    background-color: white;
+}
+
+#navigation .subNav a {
+    padding: 0 16px;
+    line-height: 38px;
+    color: black;
+}
+
+#navigation > li:hover > a,
+#navigation .subNav li:hover a {
+    background-color: gray;
+    color: black;
+}
+
+/* Search Bar */
+#header > .search-bar {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 50px;
+    padding: 0 21px;
+}
+
+#header .search-bar:hover {
+    background-color: rgba(248, 60, 60, 0.7);
+    cursor: pointer;
+}
+
+/* Slider */
+#slider {
+    position: relative;
+    margin-top: 50px;
+    padding-top: 50%;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    color: white;
+    padding: 0 32px;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .text-heading {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+#slider .text-description {
+    font-size: 20px;
+}
+/* Content & About Section */
+.content .content-section {
+    width: 70%;
+    padding: 32px 0;
+    margin: auto;
+}
+
+.content-heading {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.content-subheading {
+    font-size: 11px;
+    font-style: italic;
+    color: gray;
+}
+
+.content-description {
+    text-align: justify;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.content-heading,
+.content-subheading,
+.content-description {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/* Blog Section */
+#blog {
+    background-color: black;
+}
+
+
+.blog-subheading {
+    color: gray;
+}
+
+.blog-heading,
+.blog-description {
+    color: white;
+}
+
+/* Discord Section */
+#discord {
+    position: relative;
+}
+
+#discord .content-discord {
+    margin-top: 50px;
+    min-width: 70%;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 32px;
+
+    background-color: rgb(39, 42, 56);
+}
+
+#discord .discord-description {
+    margin: 0 50px 0 200px;
+}
+
+#discord .discord-heading,
+#discord .discord-description {
+    color: rgb(220, 220, 220);
+}
+
+#discord .discord-img{
+    background-color: black;
+}
+
+/* Contact Section */
+#contact {
+    margin: 250px;
+}
+
+#contact .contact-description {
+    position: relative;
+    min-width: 700px;
+    min-height: 250px;
+    background-color:rgb(250, 250, 250);
+
+    border-radius: 16px;
+    box-shadow: 10px 10px 32px black;
+
+    font-size: 18px;
+    display: inline-block;
+}
+
+#contact .contact-description .contact-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 65px 20px 0;
+    line-height: 40px;
+    font-size: 14px;
+    width: 35%;
+    
+    text-transform: uppercase;
+    text-align: justify;
+    font-style: initial;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#contact .contact-description .contact-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+}
+#contact .contact-input .input-name {
+    margin: 35px 10px 20px;
+}
+
+
+#contact .contact-input .input-email {
+    margin: 35px 10px 20px;
+}
+
+#contact .contact-input .input-message {
+    margin: 35px 10px 20px;
+}
+
+#contact .contact-input .input-name,
+#contact .contact-input .input-email,
+#contact .contact-input .input-message {
+    height: 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#contact .contact-input .input-border {
+    border: 1px solid gray;
+}
+
+/* Images */
+#discord .discord-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+
+    height: 150px;
+    width: 150px;
+}
+
+/* Icons */
+#navigation .nav-arrow-right {
+    font-size: 9px;
+}
+#header .search-bar > .header-search {
+    color: white;
+}
